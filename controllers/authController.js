@@ -13,7 +13,7 @@ const register = async(req,res) => {
     
     const newUser = new User({
         username: username,
-        password: hashPassword
+        password: hashPassword,
     })
     try {
         await newUser.save();

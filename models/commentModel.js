@@ -7,7 +7,9 @@ const CommentSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
-    content: String,
+    content: {
+        type: String,
+    },
 });
 
 const Comment = mongoose.model("Comment", postSchema);

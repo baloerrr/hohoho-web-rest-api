@@ -4,7 +4,7 @@ mongoose.set("strictQuery", true);
 
 const postSchema = new mongoose.Schema({
     author: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'User'
     },
     content: {
